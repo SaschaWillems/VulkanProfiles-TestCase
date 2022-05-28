@@ -31,7 +31,7 @@ int main(int argc, char *argv[])
     instanceCI.ppEnabledExtensionNames = enabledExtensions.data();
     res = vkCreateInstance(&instanceCI, nullptr, &instance);
     assert(res == VK_SUCCESS);
-    if (not deviceProperties2Available) {
+    if (!deviceProperties2Available) {
         qDebug() << "Instance does not support device props2";
         exit(-1);
     }
