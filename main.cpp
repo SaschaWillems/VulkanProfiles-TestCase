@@ -61,8 +61,9 @@ int main(int argc, char *argv[])
             VkBool32 supported = VK_FALSE;
             vpGetPhysicalDeviceProfileSupport(instance, physDevice, &profile, &supported);
         }
-
     }
+
+    qInfo() << "Finished reading devices and profiles";
 
     return a.exec();
 }
