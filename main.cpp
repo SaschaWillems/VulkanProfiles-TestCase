@@ -60,6 +60,7 @@ int main(int argc, char *argv[])
             qInfo() << "Reading profile" << profile.profileName;
             VkBool32 supported = VK_FALSE;
             vpGetPhysicalDeviceProfileSupport(instance, physDevice, &profile, &supported);
+            qInfo() << "\t" << "Supported:" << (supported ? "true" : "false");
         }
     }
 
